@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PayPal Clone</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+</head>
+<body class="bg-white font-sans">
+  <nav class="bg-white shadow-md py-4 px-6 md:px-12 lg:px-24">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+        <img class="h-10" src="paypal logo.jpg" alt="PayPal Logo" />
+        <ul class="hidden md:flex space-x-6">
+          <li class="hover:cursor-pointer hover:inline-block text-30 hover:rounded-full border-transparent p-2 hover:text-blue-800 hover:font-bold hover:bg-blue-100">Personal</li>
+          <li class="hover:cursor-pointer inline-block hover:rounded-full border-transparent p-2 hover:text-blue-800 hover:font-bold hover:bg-blue-100">Business</li>
+          <li class="hover:cursor-pointer inline-block hover:rounded-full p-2 border-transparent hover:text-blue-800 hover:font-bold hover:bg-blue-100">Enterprise</li>
+          <li class="hover:cursor-pointer inline-block hover:rounded-full p-2 border-transparent hover:text-blue-600 hover:font-bold hover:border hover:border-slate-200">Developer</li>
+        </ul>
+      </div>
+      <div class="hidden md:flex space-x-4 items-center">
+        <button class="rounded hover:rounded-full p-2 hover:text-blue-600 hover:font-bold hover:border hover:border-slate-200 hover:cursor-pointer">Help</button>
+        <button class="border border-10 font-bold text-blue-900 border-blue-900 hover:border-blue-600 hover:text-blue-600 hover:border rounded-full py-1 px-5">Login</button>
+        <button class="border border-10 font-bold text-white bg-blue-900 border-blue-900 rounded-full py-1 px-5 hover:bg-blue-600 hover:text-white">Sign Up</button>
+      </div>
+      <button class="md:hidden text-gray-700 focus:outline-none" id="menu-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div class="md:hidden mt-4 space-y-2 hidden" id="menu">
+      <ul class="space-y-2">
+        <li class="hover:cursor-pointer hover:inline-block text-30 hover:rounded-full border-transparent p-2 hover:text-blue-800 hover:font-bold hover:bg-blue-100">Personal</li>
+        <li class="hover:cursor-pointer inline-block hover:rounded-full border-transparent p-2 hover:text-blue-800 hover:font-bold hover:bg-blue-100">Business</li>
+        <li class="hover:cursor-pointer inline-block hover:rounded-full p-2 border-transparent hover:text-blue-800 hover:font-bold hover:bg-blue-100">Enterprise</li>
+        <li class="hover:cursor-pointer inline-block hover:rounded-full p-2 border-transparent hover:text-blue-600 hover:font-bold hover:border hover:border-slate-200">Developer</li>
+      </ul>
+      <div class="space-y-2 mt-4">
+        <button class="rounded hover:rounded-full p-2 hover:text-blue-600 hover:font-bold hover:border hover:border-slate-200 hover:cursor-pointer w-full text-left">Help</button>
+        <button class="border border-10 font-bold text-blue-900 border-blue-900 hover:border-blue-600 hover:text-blue-600 hover:border rounded-full py-1 px-5 w-full text-left">Login</button>
+        <button class="border border-10 font-bold text-white bg-blue-900 border-blue-900 rounded-full py-1 px-5 hover:bg-blue-600 hover:text-white w-full text-left">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container mx-auto px-6 md:px-12 lg:px-24 py-10 md:py-20 flex flex-col md:flex-row items-center">
+    <div class="w-full md:w-1/2 space-y-6">
+      <h1 class="text-blue-900 font-bold text-3xl md:text-4xl lg:text-5xl">Earn 10% back on your shopping.*</h1>
+      <p class="text-blue-950">At the end of your first 7 days with PayPal, we’ll add up all your eligible checkout transactions. Within 30 days you’ll receive 10% back, up to a maximum of 2,000 Rewards points (worth $20).</p>
+      <div class="space-x-4">
+        <a href="#" class="inline-block text-white bg-blue-900 py-2 px-6 rounded-full hover:bg-blue-600">Sign Up for PayPal</a>
+        <a href="#" class="inline-block text-blue-900 border border-blue-900 py-2 px-6 rounded-full hover:bg-blue-100">Learn More</a>
+      </div>
+      <p class="text-blue-900 text-sm">
+        *Max 15,000 rewards ($20 cash equivalent once redeemed) available under this offer. Ends 06/30/2023. Terms apply. Redeem points towards cash and other options.
+        <a href="#" class="text-blue-500 hover:underline">Terms and Exclusions apply</a>.
+      </p>
+    </div>
+    <div class="w-full md:w-1/2 mt-10 md:mt-0 flex justify-center">
+      <img class="rounded-lg" src="paypal.webp" alt="PayPal Promotion" />
+    </div>
+  </main>
+
+  <section class="bg-blue-100 py-10 md:py-20 text-center">
+    <h2 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">More places to shop. More ways to make your money work harder.</h2>
+  </section>
+
+  <section class="container mx-auto py-10 md:py-20 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center space-y-10 md:space-y-0 md:space-x-10">
+    <img class="w-full md:w-1/2 rounded-lg" src="pic2.webp" alt="Shopping" />
+    <h3 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Check out with even more choices</h3>
+  </section>
+
+  <section class="container mx-auto py-10 md:py-20 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row-reverse items-center space-y-10 md:space-y-0 md:space-x-10 md:space-x-reverse">
+    <img class="w-full md:w-1/2 rounded-lg" src="pic3.webp" alt="Send Money" />
+    <h3 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Send money across the table or across the globe</h3>
+  </section>
+
+  <section class="bg-yellow-400 py-10 md:py-20 text-center">
+    <div class="container mx-auto space-y-6">
+      <h2 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Send money securely around the world.</h2>
+      <h2 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Pay later nearly everywhere you shop.</h2>
+      <h2 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Support causes that matter to you.</h2>
+      <h2 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Explore crypto. <span class="text-blue-600">Who knew one app could be so mighty?</span></h2>
+    </div>
+  </section>
+
+  <section class="container mx-auto py-10 md:py-20 text-center">
+    <h2 class="text-blue-950 font-bold text-2xl md:text-3xl lg:text-4xl">Shop your faves. Pay with PayPal.</h2>
+  </section>
+
+  <section class="container mx-auto py-10 md:py-20 px-6 md:px-12 lg:px-24 grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="walmart.png" alt="Walmart" />
+    </div>
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="home depo.png" alt="Home Depot" />
+    </div>
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="dick sporting goods.png" alt="Dick's Sporting Goods" />
+    </div>
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="nike.jpg" alt="Nike" />
+    </div>
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="shein.png" alt="Shein" />
+    </div>
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="sonos.png" alt="Sonos" />
+    </div>
+    <div class="bg-gray-200 p-6 flex items-center justify-center rounded-lg hover:bg-blue-500 transition">
+      <img src="best buy.png" alt="Best Buy" />
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
